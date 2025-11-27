@@ -5,6 +5,8 @@ public class Enemies : MonoBehaviour
 {
     public float enemyspeed;
     public int enemylife;
+    public GameObject prize;
+    public Transform prizeSpawn;
     public TextMeshProUGUI gameOverText;
     private void OnCollisionEnter(Collision collision)
     {
@@ -61,6 +63,7 @@ public class Enemies : MonoBehaviour
 
 
             Destroy(gameObject);
+            Instantiate(prize, prizeSpawn.position, prizeSpawn.rotation);
 
         }
 

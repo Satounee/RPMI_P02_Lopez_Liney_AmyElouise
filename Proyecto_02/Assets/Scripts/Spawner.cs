@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Spawn");
+        Debug.Log("Spawn"); //pone mensaje
 
         Instantiate(adventurer, spawnPoint.position , spawnPoint.rotation);
     }
