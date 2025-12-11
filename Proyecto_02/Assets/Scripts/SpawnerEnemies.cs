@@ -8,7 +8,7 @@ public class SpawnerEnemies : MonoBehaviour
     public float spawnSpeed2;
     void Start()
     {
-        InvokeRepeating("InstantiateSkeleton", spawnSpeed1, spawnSpeed2);
+        InvokeRepeating("InstantiateSkeleton", spawnSpeed1 * Time.deltaTime, spawnSpeed2 * Time.deltaTime);
     }
 
     private void InstantiateSkeleton()

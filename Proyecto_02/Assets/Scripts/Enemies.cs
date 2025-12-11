@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemies : MonoBehaviour
@@ -7,7 +8,10 @@ public class Enemies : MonoBehaviour
     public int enemylife;
     public GameObject prize;
     public Transform prizeSpawn;
-    public TextMeshProUGUI gameOverText;
+   
+
+   
+        
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -38,7 +42,7 @@ public class Enemies : MonoBehaviour
         {
 
             enemyspeed = 0;
-            gameOverText.gameObject.SetActive(true);
+            
 
         }
 
@@ -48,9 +52,11 @@ public class Enemies : MonoBehaviour
     }
      void Start()
     {
-        gameOverText.gameObject.SetActive(false);
 
 
+        // gameOverText = GameObject.Find("GameOver").GetComponent<TextMeshProUGUI>();
+
+        
     }
 
 
