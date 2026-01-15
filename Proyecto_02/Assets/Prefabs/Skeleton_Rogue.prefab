@@ -255,6 +255,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e12b19a5821d22d4b9123107fe4b5f7b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4807111680163297918}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e12b19a5821d22d4b9123107fe4b5f7b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5802620081908860847}
   m_SourcePrefab: {fileID: 100100000, guid: e12b19a5821d22d4b9123107fe4b5f7b, type: 3}
 --- !u!4 &213573316514234447 stripped
 Transform:
@@ -330,3 +333,26 @@ MonoBehaviour:
   enemylife: 125
   prize: {fileID: 1392645586416577491, guid: 017024f2e278b214a8bde067cab67928, type: 3}
   prizeSpawn: {fileID: 163876071053316690}
+  animator: {fileID: 5802620081908860847}
+--- !u!95 &5802620081908860847
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701738421502417653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52b21a29597e0d54b8d09eae2d77cf99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

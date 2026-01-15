@@ -8,6 +8,7 @@ public class Enemies : MonoBehaviour
     public int enemylife;
     public GameObject prize;
     public Transform prizeSpawn;
+    public Animator animator;
    
 
    
@@ -67,8 +68,8 @@ public class Enemies : MonoBehaviour
         if (enemylife <= 0)
         {
 
-
-            Destroy(gameObject);
+            animator.SetBool("dead", true);
+            //Destroy(gameObject);
             Instantiate(prize, prizeSpawn.position, prizeSpawn.rotation);
 
         }
