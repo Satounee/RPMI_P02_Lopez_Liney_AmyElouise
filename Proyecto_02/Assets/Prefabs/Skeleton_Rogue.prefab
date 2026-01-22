@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b775b6479e2a32c46b8a7c83a25e9269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies
-  enemyspeed: 0.001
+  enemyspeed: 1
   enemylife: 125
   prize: {fileID: 1392645586416577491, guid: 017024f2e278b214a8bde067cab67928, type: 3}
   prizeSpawn: {fileID: 163876071053316690}

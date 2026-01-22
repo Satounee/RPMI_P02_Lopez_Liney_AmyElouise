@@ -24,7 +24,7 @@ public class Arrows : MonoBehaviour
     void Update()
     {
         {
-            transform.Translate(0, 0, arrowspeed * Time.deltaTime);
+            transform.Translate(arrowspeed * Time.deltaTime, 0, 0, Space.World);
         }
     }
 }
