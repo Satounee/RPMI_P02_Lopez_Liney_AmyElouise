@@ -12,6 +12,8 @@ public class Enemies : MonoBehaviour
     private bool isDead;
     private bool movement;
     private AdventurerController adventurerToAttack;
+    private Inventory inventory;
+    
    
 
     private void OnTriggerEnter(Collider other)
@@ -44,6 +46,9 @@ public class Enemies : MonoBehaviour
 
         {
             enemyspeed = 0;
+            Invoke("EndGame", 0);
+
+            
         }
 
 
@@ -58,7 +63,10 @@ public class Enemies : MonoBehaviour
     }
     void Start()
     {
+        inventory = GameObject.Find("Inventory").GetComponent<Inventory>();
         movement = false;
+        animator.SetBool("gameover", false);
+
 
         // gameOverText = GameObject.Find("GameOver").GetComponent<TextMeshProUGUI>();        
     }
@@ -77,6 +85,7 @@ public class Enemies : MonoBehaviour
                         adventurerToAttack = hitInfo.collider.GetComponent<AdventurerController>();
                     }
                     movement = false;
+                    
                 }
 
                 transform.Translate(-enemyspeed * Time.deltaTime, 0, 0, Space.World);
@@ -87,6 +96,7 @@ public class Enemies : MonoBehaviour
         if (isDead == true)
         {
             enemyspeed = 0;
+            
 
         }
 
@@ -101,7 +111,10 @@ public class Enemies : MonoBehaviour
     public void DestroyEnemy()
     {
         Destroy(gameObject);
+        inventory.AddEnemies(1);
         Instantiate(prize, prizeSpawn.position, prizeSpawn.rotation);
+        
+        
     }
 
     public void Continuar() 
@@ -109,5 +122,10 @@ public class Enemies : MonoBehaviour
         animator.SetBool("attack", false);
         movement = true;
        
+    }
+    public void EndGame()
+    {
+        animator.SetBool("gameover", true);
+        movement= false;
     }
 }
