@@ -110,5 +110,7 @@ public class AdventurerController : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+    // testtt
    
 }
