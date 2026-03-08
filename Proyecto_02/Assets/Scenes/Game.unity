@@ -1196,8 +1196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnerEnemies
   skeletonOne: {fileID: 701738421502417653, guid: 48b86cf98123d6f42b447010d04e9cd5, type: 3}
   skeletonSpawn: {fileID: 1249886516}
-  spawnSpeed1: 200
-  spawnSpeed2: 800
+  spawnSpeed1: 10
+  spawnSpeed2: 15
 --- !u!1001 &321854620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12890,6 +12890,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44860e8790afa5642b5b09aa049a19e1, type: 3}
   m_PrefabInstance: {fileID: 1710918683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1719505783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1719505785}
+  - component: {fileID: 1719505784}
+  m_Layer: 0
+  m_Name: LevelControler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1719505784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719505783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6847364d7e3e1d3458bcb702b08d309c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelControler
+  inventory: {fileID: 0}
+  enemies: 0
+--- !u!4 &1719505785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719505783}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.59183, y: 0.16772, z: -6.17381}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1726163834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6e4e3613e41ff6a41896265a5d499283, type: 3}
@@ -14370,8 +14416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnerEnemies
   skeletonOne: {fileID: 1423111424985540937, guid: aae9552cb55e4be4ebbed73ad9f10b7a, type: 3}
   skeletonSpawn: {fileID: 1085118968}
-  spawnSpeed1: 240
-  spawnSpeed2: 960
+  spawnSpeed1: 15
+  spawnSpeed2: 20
 --- !u!1001 &1949703635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14459,8 +14505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnerEnemies
   skeletonOne: {fileID: 5751339358979538184, guid: fbc906cf8420cc24da9d3ac49c06ae58, type: 3}
   skeletonSpawn: {fileID: 861919037}
-  spawnSpeed1: 160
-  spawnSpeed2: 640
+  spawnSpeed1: 5
+  spawnSpeed2: 10
 --- !u!1001 &1950234505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15266,6 +15312,7 @@ SceneRoots:
   - {fileID: 786605065}
   - {fileID: 1893535116}
   - {fileID: 1291230341}
+  - {fileID: 1719505785}
   - {fileID: 2401381148862313276}
   - {fileID: 393666832}
   - {fileID: 1329644408}

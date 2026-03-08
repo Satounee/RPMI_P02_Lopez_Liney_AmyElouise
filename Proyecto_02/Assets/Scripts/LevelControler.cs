@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class LevelControler : MonoBehaviour
 {
     public Inventory inventory;
-    public int enemyCount;
+    public int enemies;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,7 +14,7 @@ public class LevelControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemyCount >= 3)
+        if (enemies >= 3)
         {
             SceneManager.LoadScene("Menu");
         }
